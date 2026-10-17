@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wedding Invitation</title>
+    <meta name="description" content="Wedding Invitation - Maryam & Mohamed - December 27, 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="music/wedding_harp.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Envelope Screen -->
+    <div id="envelope-screen" class="envelope-screen">
+        <div class="env-lace-frame">
+            <div class="env-lace-bg"></div>
+        </div>
+        <div class="envelope-container">
+            <div class="sparkle-container" id="sparkles"></div>
+            <div class="envelope" id="envelope">
+                <div class="env-lace-pattern">
+                    <div class="env-lace-inner-bg"></div>
+                </div>
+                <div class="envelope-flap">
+                    <div class="flap-lace"></div>
+                </div>
+                <div class="wax-seal"><span>M&M</span></div>
+            </div>
+            <p class="tap-text">Tap to Open</p>
+        </div>
+    </div>
+
+    <!-- Single Page Invitation -->
+    <div id="invitation" class="invitation hidden">
+
+        <!-- Ornate multi-layer frame -->
+        <div class="invitation-frame">
+            <!-- Lace/damask background INSIDE the frame -->
+            <div class="lace-bg"></div>
+            <!-- Outer decorative border -->
+            <div class="frame-outer"></div>
+            <!-- Inner decorative border -->
+            <div class="frame-inner"></div>
+            <!-- Corner flourishes -->
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner tr"></div>
+            <div class="frame-corner bl"></div>
+            <div class="frame-corner br"></div>
+
+            <div class="invitation-inner">
+
+                <!-- Top ornament -->
+                <div class="ornamental-border fade-el"></div>
+
+                <!-- Hands photo from sides -->
+                <div class="hands-photo fade-el">
+                    <img src="images/hands_sides.png" alt="Hands" class="hands-img">
+                </div>
+
+                <!-- Arabic Blessing — full tashkeel, Ruq'ah -->
+                <div class="blessing-block fade-el">
+                    <div class="ornament-line"></div>
+                    <p class="blessing-text" dir="rtl" lang="ar">بَارَكَ اللهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+                    <div class="ornament-line"></div>
+                </div>
+
+                <!-- Initials stacked vertically in Ruq'ah -->
+                <div class="initials-stacked fade-el" dir="rtl">
+                    <span class="initial-ruqaa">م</span>
+                    <span class="initial-ruqaa">م</span>
+                </div>
+
+                <!-- English Names -->
+                <div class="names-block fade-el">
+                    <span class="name">Mariam</span>
+                    <span class="name-and">&</span>
+                    <span class="name">Mohamed</span>
+                </div>
+
+                <!-- Quote -->
+                <p class="quote fade-el"><em>Some souls are simply meant to find each other.</em></p>
+
+                <!-- Divider -->
+                <div class="diamond-divider fade-el">― ✦ ―</div>
+
+                <!-- Event Details -->
+                <div class="details-block fade-el">
+                    <div class="detail-row">
+                        <svg class="detail-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        <span>27 · 12 · 2026</span>
+                    </div>
+                    <div class="detail-row">
+                        <svg class="detail-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <span>7 : 00 PM</span>
+                    </div>
+                    <div class="detail-row">
+                        <svg class="detail-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Akhnaton Hall — Gezira Club</span>
+                    </div>
+                </div>
+
+                <!-- Location Button -->
+                <a href="https://maps.app.goo.gl/1BjBNqa4kPUqh1tJ8?g_st=ic" target="_blank" rel="noopener noreferrer" class="location-btn fade-el">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>View on Map</span>
+                </a>
+
+                <!-- Bottom ornament -->
+                <div class="ornamental-border fade-el"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button id="music-toggle" class="music-toggle hidden-btn" aria-label="Toggle music">
+        <svg id="music-icon-on" class="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+        <svg id="music-icon-off" class="music-icon hidden-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+            <line x1="1" y1="1" x2="23" y2="23" stroke-width="2.5"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
